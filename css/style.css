@@ -1,0 +1,440 @@
+/*
+=== Table of content ===
+
+1.common css
+
+
+
+*/
+
+/*common css starts*/
+:root {
+    --open: 'Open Sans', sans-serif;
+    --source: 'Source Sans Pro', sans-serif;
+    --cl1: #ff5c36;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.full-wrapper {
+    width: 100%;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-header{
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--open);
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+p {
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    line-height: 25px;
+}
+
+.btn{
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 55px;
+    border-radius: 30px;
+    transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+
+.hColor {
+    color: var(--cl1);
+}
+
+/*common css ends*/
+
+/*menu css starts*/
+.menu-bg {
+    background-color: gray;
+    z-index: 9999;
+    position: absolute;
+}
+
+.menu-bg .menu {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px 0;
+}
+
+.menu-bg .brand {
+    z-index: 99999;
+}
+
+.menu-bg .brand a {
+    font-family: var(--open);
+    color: var(--cl1);
+    font-weight: 600;
+    font-size: 40px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.menu-bg .menu-list {
+    position: relative;
+}
+
+.menu-bg .menu-list ul li {
+    float: left;
+}
+
+.menu-bg .menu-list ul li a {
+    display: block;
+    background: transparent;
+    font-family: var(--open);
+    color: var(--cl1);
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 0 15px;
+    line-height: 54px;
+    transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+
+.menu-bg .menu-list ul li.active a{
+    background: var(--cl1);
+    color: #fff;
+}
+
+.menu-bg .menu-list ul li a:hover{
+    background: var(--cl1);
+    color: #fff;
+}
+
+.menu-bg .menu-list #closeMenu,
+.menu-bg #openMenu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    right: 15px;
+}
+
+.menu-bg #openMenu {
+    display: none;
+}
+
+.menu-bg .menu-list #closeMenu {
+    top: 30px;
+    display: none;
+}
+
+.menu-bg .menu-list #closeMenu i,
+.menu-bg #openMenu i {
+    font-size: 24px;
+    padding: 5px 12px;
+}
+
+.fixed-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: toDown .6s linear;
+}
+
+@keyframes toDown {
+    0% {
+        top: -80px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+/*menu css ends*/
+
+/*banner css starts*/
+#banner-bg {
+    background: #f5f5f5;
+}
+
+#banner-bg .banner-text {
+    text-align: center;
+    width: 750px;
+    margin: 0 auto;
+    padding-top: 268px;
+}
+
+#banner-bg .banner-text h2 {
+    color: #626262;
+    padding-bottom: 30px;
+}
+
+#banner-bg .banner-form {
+    width: 376px;
+    text-align: center;
+    padding: 16px 0;
+    background: #fff;
+    margin-top: 100px;
+}
+
+#banner-bg .banner-form:hover {
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#banner-bg .banner-form h2 {
+    font-size: 20px;
+    padding-bottom: 45px;
+}
+
+#banner-bg .banner-form .form-group {
+    margin-bottom: 30px;
+}
+
+#banner-bg .banner-form .form-group input,
+#banner-bg .banner-form textarea {
+    width: 85%;
+    border: none;
+    border-bottom: 1px solid #626262;
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px 0;
+    background: transparent;
+    outline: none;
+}
+
+#banner-bg .banner-form #submitBtn {
+    line-height: 55px;
+    width: 65%;
+    border: 2px solid var(--cl1);
+    margin-top: 20px;
+    color: var(--cl1);
+    background: transparent;
+}
+
+#banner-bg .banner-form #submitBtn:hover {
+    color: #fff;
+    background: var(--cl1);
+}
+
+/*banner css ends*/
+
+/*process css starts*/
+#process-bg {
+    padding-top: 128px;
+    padding-bottom: 150px;
+}
+
+#process-bg .main-box{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#process-bg .main-box .box{
+    width: 23%;
+    text-align: center;
+    color: #fff;
+    padding: 0 40px;
+    padding-top: 54px;
+    padding-bottom: 65px;
+    position: relative;
+    transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+
+#process-bg .main-box .box-1{
+    background: #4eb2f7;
+}
+
+#process-bg .main-box .box-2{
+    background: #c049f8;
+}
+
+#process-bg .main-box .box-3{
+    background: #817eff;
+}
+
+#process-bg .main-box .box-4{
+    background: #f74770;
+}
+
+#process-bg .main-box .box:hover {
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+#process-bg .main-box .box i{
+    width: 24%;
+    font-size: 50px;
+}
+
+#process-bg .main-box .box h4{
+    font-family: var(--open);
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-top: 14px;
+    padding-bottom: 10px;
+}
+
+#process-bg .main-box .box p{
+    font-size: 15px;
+    color: #fff;
+}
+
+#process-bg .main-box .box a.btn{
+    display: inline-block;
+    background: #fff;
+    width: 80%;
+    line-height: 54px;
+    color: #000;
+    position: absolute;
+    left: 50%;
+    bottom: -27px;
+    transform: translateX(-50%);
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.08);
+}
+
+#process-bg .main-box .box:hover a.btn{
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+#process-bg .main-box .box a.btn:hover{
+    color: #fff;
+    background: var(--cl1);
+}
+
+/*process css ends*/
+
+/*featured css starts*/
+#featured {
+    background: #fbfbfb;
+    padding-top: 112px;
+    padding-bottom: 170px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*featured css ends*/
+
+/* back to top starts */
+#backToTop {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    color: #fff;
+    border: 2px solid var(--cl1);
+    display: none;
+    animation: toBottom linear .8s;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+@keyframes toBottom {
+    0% {
+        bottom: 100%;
+    }
+
+    60% {
+        bottom: 30px;
+    }
+
+    80% {
+        bottom: 80px;
+    }
+
+    100% {
+        bottom: 30px;
+    }
+}
+
+#backToTop:hover {
+    background: var(--cl1);
+}
+
+#backToTop i {
+    text-align: center;
+    line-height: 34px;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    color: var(--cl1);
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+#backToTop:hover i{
+    color: #fff;
+}
+
+/* back to top ends */
+
