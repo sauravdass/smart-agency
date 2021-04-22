@@ -76,6 +76,19 @@
         margin-bottom: 65px;
     }
     
+    #featured {
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+
+    #featured .featured-items{
+        margin-top: 60px;
+    }
+
+    #featured .featured-items .box{
+        margin-bottom: 20px;
+    }
+
 }
 
 /* medium device ends */
@@ -115,6 +128,20 @@
         margin-bottom: 15px;
     }
 
+    #featured .featured-items{
+        margin-top: 30px;
+    }
+
+    #featured .featured-items .box{
+        width: 48%;
+    }
+
+    #featured .featured-items .box-7,
+    #featured .featured-items .box-8,
+    #featured .featured-items .box-9{
+        display: none;
+    }
+
 }
 
 /* small device ends */
@@ -131,6 +158,21 @@
 
     #process-bg .main-box .box-3{
         margin-bottom: 65px;
+    }
+
+    #featured {
+        padding-bottom: 60px;
+    }
+
+
+    #featured .featured-items .box{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    #featured .featured-items .box-5,
+    #featured .featured-items .box-6{
+        display: none;
     }
 }
 
