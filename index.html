@@ -32,12 +32,12 @@
             </div>
             <div class="menu-list">
                 <ul>
-                    <li class="active"><a href="#">home</a></li>
-                    <li><a href="#">works</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">team</a></li>
-                    <li><a href="#">testimonial</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li class="active"><a href="#banner-bg">home</a></li>
+                    <li><a href="#featured">works</a></li>
+                    <li><a href="#service">services</a></li>
+                    <li><a href="#team">team</a></li>
+                    <li><a href="#testimonial">testimonial</a></li>
+                    <li><a href="#contact">contact</a></li>
                     <div id="closeMenu">
                         <i class="fas fa-times"></i>
                     </div>
@@ -53,21 +53,26 @@
         <div class="container banner">
             <div class="banner-text">
                 <h2><span class="hColor">smart</span> agency landing page</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates        doloremque rerum aspernatur dolorum at!</p>
+                <p class="wow animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, fuga provident. Libero magni
+                    quibusdam labore ad iste saepe hic, maxime qui ipsum tempore beatae, volu tomi ptates doloremque
+                    rerum aspernatur dolorum at!</p>
             </div>
             <div class="banner-form">
                 <h2><span class="hColor">send</span> a message</h2>
                 <form action="">
                     <div class="form-group">
-                        <input id="firstName" type="text" placeholder="Your Name"><br>
-                        <small id="fNameErr"></small>
+                        <input id="fullName" type="text" placeholder="Your Name"><br>
+                        <small id="nameErr"></small>
                     </div>
                     <div class="form-group">
                         <input id="email" type="email" placeholder="Your E-mail"><br>
                         <small id="emailErr"></small>
                     </div>
-                    <textarea name="" id="" cols="30" rows="3" placeholder="Your Message"></textarea> <br>
-                    <button type="submit" class="btn" id="submitBtn" onclick="">Send message</button>
+                    <div class="form-group">
+                        <textarea name="" id="message" cols="30" rows="3" placeholder="Your Message"></textarea><br>
+                        <small id="messageErr"></small>
+                    </div>
+                    <button type="submit" class="btn" id="submitBtn" onclick="return validateForm()">Send message</button>
                 </form>
             </div>
         </div>
@@ -79,10 +84,10 @@
         <div class="container">
             <div class="section-header">
                 <h2><span class="hColor">working</span> process</h2>
-                <p>Lorem ipsum dolor sit amet consectet ur adipiscing elit  Vestibulum bibend um vestibulum.</p>
+                <p>Lorem ipsum dolor sit amet consectet ur adipiscing elit Vestibulum bibend um vestibulum.</p>
             </div>
             <div class="main-box">
-                <div class="box box-1">
+                <div class="box box-1 wow animate__animated animate__fadeInLeft">
                     <div class="icon">
                         <i class="fas fa-magnet"></i>
                     </div>
@@ -90,7 +95,7 @@
                     <p>Lorem ipsum is dummy lorem very dumy</p>
                     <a href="#" class="btn">know more</a>
                 </div>
-                <div class="box box-2">
+                <div class="box box-2 wow animate__animated animate__fadeInLeft">
                     <div class="icon">
                         <i class="fas fa-bug"></i>
                     </div>
@@ -98,7 +103,7 @@
                     <p>Lorem ipsum is dummy lorem very dumy</p>
                     <a href="#" class="btn">know more</a>
                 </div>
-                <div class="box box-3">
+                <div class="box box-3 wow animate__animated animate__fadeInLeft">
                     <div class="icon">
                         <i class="fas fa-cogs"></i>
                     </div>
@@ -106,7 +111,7 @@
                     <p>Lorem ipsum is dummy lorem very dumy</p>
                     <a href="#" class="btn">know more</a>
                 </div>
-                <div class="box box-4">
+                <div class="box box-4 wow animate__animated animate__fadeInLeft">
                     <div class="icon">
                         <i class="fas fa-camera-retro"></i>
                     </div>
@@ -124,7 +129,7 @@
         <div class="container">
             <div class="section-header">
                 <h2><span class="hColor">featured</span> works</h2>
-                <p>Lorem ipsum dolor sit amet consectet ur adipiscing elit  Vestibulum bibend um vestibulum.</p>
+                <p>Lorem ipsum dolor sit amet consectet ur adipiscing elit Vestibulum bibend um vestibulum.</p>
             </div>
             <div class="featured-items">
                 <div class="box box-1">
@@ -191,28 +196,28 @@
         <div class="container">
             <div class="section-header">
                 <h2><span class="hColor">services</span> we provide</h2>
-                <p>Lorem ipsum dolor sit amet consectet ur adipiscing elit  Vestibulum bibend um vestibulum.</p>
+                <p>Lorem ipsum dolor sit amet consectet ur adipiscing elit Vestibulum bibend um vestibulum.</p>
             </div>
             <div class="service-items">
-                <div class="service-box box-1">
+                <div class="service-box box-1 wow animate__animated animate__fadeInLeft">
                     <i class="fab fa-app-store"></i>
                     <h4>app design</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, laborum?</p>
                     <a href="#" class="btn">take service</a>
                 </div>
-                <div class="service-box box-2">
+                <div class="service-box box-2 wow animate__animated animate__fadeInLeft">
                     <i class="fas fa-code"></i>
                     <h4>web design</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, laborum?</p>
                     <a href="#" class="btn">take service</a>
                 </div>
-                <div class="service-box box-3">
+                <div class="service-box box-3 wow animate__animated animate__fadeInLeft">
                     <i class="fab fa-node"></i>
                     <h4>web development</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, laborum?</p>
                     <a href="#" class="btn">take service</a>
                 </div>
-                <div class="service-box box-4">
+                <div class="service-box box-4 wow animate__animated animate__fadeInLeft">
                     <i class="fas fa-pencil-ruler"></i>
                     <h4>graphic design</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, laborum?</p>
@@ -228,9 +233,8 @@
         <div class="container">
             <div class="section-header">
                 <h2><span class="hColor">team</span> &amp; skills</h2>
-                <p>Lorem ipsum dolor sit amet consectet ur adipiscing elit  Vestibulum bibend um vestibulum.</p>
+                <p>Lorem ipsum dolor sit amet consectet ur adipiscing elit Vestibulum bibend um vestibulum.</p>
             </div>
-
             <div class="team-items">
                 <div class="team-box box-1">
                     <img src="images/team1.jpg" alt="team member">
@@ -274,13 +278,125 @@
                     </div>
                     <div class="overlay-2">
                         <h3>harry</h3>
-                        <span>graphic design</span>
+                        <span>graphic designer</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- team ends -->
+
+    <!-- testimonial starts -->
+    <section id="testimonial" class="full-wrapper">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="hColor">clients</span> said</h2>
+                <p>Lorem ipsum dolor sit amet consectet ur adipiscing elit Vestibulum bibend um vestibulum.</p>
+            </div>
+            <div class="testi-slider">
+                <div class="testi-item">
+                    <div class="testi-box">
+                        <div class="testi-img">
+                            <img src="images/testimonial1.png" alt="testimonial image">
+                        </div>
+                        <p class="first">This was my first time renting from car rental. The service rep help me find
+                            the best rental to suit my needs. I will definitely rent with this company again”</p>
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <p class="last"><span>chirstopher dom,</span> HK Director</p>
+                    </div>
+                </div>
+                <div class="testi-item">
+                    <div class="testi-box">
+                        <div class="testi-img">
+                            <img src="images/testimonial2.png" alt="testimonial image">
+                        </div>
+                        <p class="first">This was my first time renting from car rental. The service rep help me find
+                            the best rental to suit my needs. I will definitely rent with this company again”</p>
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <p class="last"><span>letty mac,</span> Web Chief</p>
+                    </div>
+                </div>
+                <div class="testi-item">
+                    <div class="testi-box">
+                        <div class="testi-img">
+                            <img src="images/testimonial1.png" alt="testimonial image">
+                        </div>
+                        <p class="first">This was my first time renting from car rental. The service rep help me find
+                            the best rental to suit my needs. I will definitely rent with this company again”</p>
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <p class="last"><span>chirstopher nolan,</span> Graphic Chief</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial ends -->
+
+    <!-- brand starts -->
+    <section id="brand" class="full-wrapper">
+        <div class="container">
+            <div class="brand-box brand-1 wow animate__animated animate__fadeInLeft">
+                <img src="images/linkedin.png" alt="brand name">
+            </div>
+            <div class="brand-box brand-2 wow animate__animated animate__fadeInLeft">
+                <img src="images/dribble.png" alt="brand name">
+            </div>
+            <div class="brand-box brand-3 wow animate__animated animate__fadeInLeft">
+                <img src="images/envato.png" alt="brand name">
+            </div>
+            <div class="brand-box brand-4 wow animate__animated animate__fadeInLeft">
+                <img src="images/linkedin.png" alt="brand name">
+            </div>
+            <div class="brand-box brand-5 wow animate__animated animate__fadeInLeft">
+                <img src="images/dribble.png" alt="brand name">
+            </div>
+            <div class="brand-box brand-6 wow animate__animated animate__fadeInLeft">
+                <img src="images/envato.png" alt="brand name">
+            </div>
+        </div>
+    </section>
+    <!-- brand ends -->
+
+    <!-- footer starts -->
+    <footer id="contact" class="full-wrapper">
+        <div class="container">
+            <div class="contact-btn">
+                <a href="#" class="btn">contact us</a>
+            </div>
+            <div class="social-copy">
+                <div class="social">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2020 - 2021 Deviserweb Ltd.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends -->
 
 
 
