@@ -65,7 +65,7 @@ p {
 
 .btn{
     font-family: var(--open);
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     text-transform: capitalize;
     line-height: 55px;
@@ -79,6 +79,14 @@ p {
 
 .hColor {
     color: var(--cl1);
+}
+
+h4{
+    font-family: var(--open);
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    white-space: nowrap;
 }
 
 /*common css ends*/
@@ -307,15 +315,10 @@ p {
 }
 
 #process-bg .main-box .box i{
-    width: 24%;
     font-size: 50px;
 }
 
 #process-bg .main-box .box h4{
-    font-family: var(--open);
-    font-weight: 600;
-    font-size: 20px;
-    text-transform: capitalize;
     padding-top: 14px;
     padding-bottom: 10px;
 }
@@ -410,19 +413,107 @@ p {
     color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /*featured css ends*/
+
+/*service css starts*/
+#service{
+    padding-top: 130px;
+    padding-bottom: 170px;
+}
+
+#service .service-items{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#service .service-items .service-box{
+    width: 23%;
+    color: #fff;
+    padding: 0 28px;
+    padding-top: 48px;
+    padding-bottom: 60px;
+    position: relative;
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+#service .service-items .box-1{
+    background: #4eb2f7;
+}
+
+#service .service-items .box-2{
+    background: #c049f8;
+}
+
+#service .service-items .box-3{
+    background: #817eff;
+}
+
+#service .service-items .box-4{
+    background: #f74770;
+}
+
+#service .service-items .service-box:hover {
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+#service .service-items .service-box i{
+    font-size: 50px;
+}
+
+#service .service-items .service-box h4{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#service .service-items .service-box p{
+    font-size: 15px;
+    color: #fff;
+}
+
+#service .service-items .service-box a.btn{
+    color: var(--cl1);
+    background: #fff;
+    border: none;
+    display: inline-block;
+    line-height: 50px;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.08);
+    transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+}
+
+#service .service-items .service-box a.btn:hover{
+    color: #fff;
+    background: var(--cl1);
+}
+
+#service .service-items .service-box:hover a.btn{
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+/*service css ends*/
 
 /* back to top starts */
 #backToTop {
