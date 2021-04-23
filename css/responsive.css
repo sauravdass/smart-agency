@@ -96,12 +96,12 @@
         margin-bottom: 20px;
     }
 
-    #service{
+    #service {
         padding-top: 80px;
         padding-bottom: 120px;
     }
 
-    #service .service-items{
+    #service .service-items {
         margin-top: 50px;
     }
 
@@ -109,6 +109,29 @@
         width: 48%;
         padding-top: 48px;
         padding-bottom: 60px;
+    }
+
+    #team {
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+
+    #team .team-items {
+        margin-top: 40px;
+    }
+
+    #team .team-items .team-box .overlay ul {
+        margin-top: 5px;
+    }
+
+    #team .team-items .team-box .overlay ul li {
+        margin-bottom: 10px;
+    }
+
+    #team .team-items .team-box .overlay ul li a {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
     }
 
 }
@@ -197,7 +220,7 @@
         display: none;
     }
 
-    #service{
+    #service {
         padding-top: 60px;
         padding-bottom: 100px;
     }
@@ -208,6 +231,29 @@
 
     #service .service-items .box-3 {
         margin-bottom: 65px;
+    }
+
+    #team .team-items .team-box {
+        width: 100%;
+    }
+
+    #team .team-items .team-box .overlay ul {
+        margin-top: 40px;
+    }
+
+    #team .team-items .team-box .overlay ul li {
+        margin-bottom: 20px;
+    }
+
+    #team .team-items .team-box .overlay ul li a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    #team .team-items .box-1,
+    #team .team-items .box-2{
+        margin-bottom: 50px;
     }
 }
 
